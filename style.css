@@ -12,7 +12,6 @@ body {
 
 .container1 {
   display: flex;
-  /* justify-content: space-around; */
   height: 48px;
   align-items: center;
   padding-top: 10px;
@@ -50,32 +49,19 @@ body {
   border-top: 1px solid rgb(181, 140, 103);
   width: 80%;
   margin: auto;
-  /* position: absolute;
-  left: 6em;
-  top: 3.3em; */
+
 }
 
-/* .container3 {
-  position: relative;
-  height: 110px;
-}
-
-.navbar {
-  height: fit-content;
-} */
 
 .navdiv {
   display: flex;
   width: 80%;
   margin: auto;
   flex-wrap: wrap;
-  /* justify-content: space-between;
-  gap: 3em;
-  padding: 2em 7em 0px 6em; */
+  justify-content: space-between;
+  padding-top: 14px
 }
-.cart {
-  width: 14%;
-}
+
 .navdiv ul {
   display: flex;
   gap: 2em;
@@ -95,7 +81,8 @@ body {
 .navdiv ul li a {
   text-decoration: none;
 }
-.cool-nav  {
+
+.cool-nav {
   display: inline-block;
   color: #fff;
   text-decoration: none;
@@ -109,7 +96,7 @@ body {
   display: block;
   width: 0;
   height: 1px;
-  background:rgb(181, 140, 103);
+  background: rgb(181, 140, 103);
   transition: width .3s;
 }
 
@@ -118,16 +105,7 @@ body {
   transition: width .3s;
 }
 
-.container3 h1 {
-  color: #fff;
-  font-size: 28px;
-  font-weight: 250;
-  position: absolute;
-  top: 2.9em;
-}
-
 .container3 h2 {
-  float: right;
   color: #fff;
   font-size: 19px;
   font-weight: 400;
@@ -136,9 +114,18 @@ body {
 .container3 i {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px rgb(181, 140, 103);
-  position: absolute;
-  right: 5em;
-  padding: 6px;
+}
+
+.brand {
+  width: 32%;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.brand h1 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 250;
 }
 
 .main {
@@ -152,7 +139,7 @@ body {
 }
 
 .main-img img {
-  width: 575px;
+  width: 547px;
   height: 450px;
 }
 
@@ -206,6 +193,7 @@ body {
 .pralines {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .choco {
@@ -295,12 +283,14 @@ body {
   height: 548px;
   position: absolute;
 }
-.discover{
+
+.discover {
   display: flex;
   flex-direction: row;
   justify-content: center;
   padding-top: 10px;
 }
+
 .bar {
   border: 0.1px solid rgb(181, 140, 103);
   width: 335.4px;
@@ -314,8 +304,8 @@ body {
   font-weight: 300;
   font-style: normal;
   position: absolute;
-    left: 2em;
-    top: 7px;
+  left: 2em;
+  top: 7px;
 }
 
 .bar h2 {
@@ -334,8 +324,8 @@ body {
   text-transform: uppercase;
   text-decoration: underline rgb(181, 140, 103);
   position: absolute;
-    top: 4em;
-    left: 1em;
+  top: 4em;
+  left: 1em;
 
 }
 
@@ -371,6 +361,7 @@ body {
   left: 1em;
   top: 10px;
 }
+
 #munch h3 {
   font-size: 24px;
   font-weight: 300;
@@ -395,77 +386,86 @@ body {
   height: 548px;
   position: absolute;
 }
-.container6{
+
+.container6 {
   display: flex;
-  position: relative;
   padding: 7px;
 }
-.restaurant img {
-  width: 700px;
-  float: right;
-  border: 1px solid rgb(181, 140, 103);
 
-}
 .opening {
-  width: 25%;
+  width: 60%;
   display: flex;
   text-align: center;
   flex-direction: column;
+  align-items: center;
   gap: 6em;
-  margin: 0 auto;
   color: white;
   text-align: center;
-  padding: 30px;
 }
-  .visit {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    font-size: larger;
-    text-align: left;
+
+.visit {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: larger;
+  text-align: left;
+  width: 60%;
+  padding-top: 38px;
+
 }
-.visit h3{
+
+.restaurant img {
+  width: 100%;
+  border: 1px solid rgb(181, 140, 103);
+}
+
+.visit h3 {
   font-weight: 200;
   font-size: 30px;
 }
-.visit h4{
+
+.visit h4 {
   font-weight: normal;
   font-size: 19px;
 }
-.visit h5{
+
+.visit h5 {
   font-weight: normal;
   font-size: 19px;
 }
-.visit h6{
+
+.visit h6 {
   font-weight: normal;
   font-size: 19px;
 }
-.visit i{
+
+.visit i {
   padding: 2px;
   font-size: 11px;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px rgb(181, 140, 103);
 }
-.marque{
+
+.marque {
   color: white;
   font-family: "Mrs Saint Delafield", cursive;
   border: 1px solid rgb(181, 140, 103);
   height: 80px;
 }
+
 .scroll-container {
-  width: 100%; 
+  width: 100%;
   overflow: hidden;
   background-color: #1A2D1F;
   border: 1px solid rgb(181, 140, 103);
   color: rgb(181, 140, 103);
   font-family: "Mrs Saint Delafield", cursive;
   font-size: 50px
-  
 }
 
 .scroll-text {
   white-space: nowrap;
-  animation: scroll-left 12s linear infinite; 
+  animation: scroll-left 12s linear infinite;
   display: inline-block;
 }
 
@@ -473,19 +473,23 @@ body {
   0% {
     transform: translateX(100%);
   }
+
   100% {
     transform: translateX(-100%);
   }
 }
- .container7{
+
+.container7 {
   position: relative;
 }
+
 .blog {
   display: flex;
   justify-content: center;
   gap: 1em;
   padding: 2em;
 }
+
 .cake {
   color: white;
   display: flex;
@@ -496,38 +500,46 @@ body {
   height: 600px;
   border: 1px solid rgb(181, 140, 103);
 }
+
 .cake img {
   width: 85%;
   transition: transform 0.3s ease-in;
   padding: 30px;
 }
+
 .cake #imagehover:hover {
   transform: scale(0.9);
 }
-.cake h3{
+
+.cake h3 {
   font-weight: 200;
 }
-.cake h4{
- font-weight: 300;
- font-size: 25px;
+
+.cake h4 {
+  font-weight: 300;
+  font-size: 25px;
 }
-.cake i{
+
+.cake i {
   padding: 3px;
   font-size: 11px;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px rgb(181, 140, 103);
 }
+
 .container8 {
   width: 100%;
   height: 450px;
 }
-.container8 center{
+
+.container8 center {
   color: white;
   font-size: 40px;
   font-weight: 200;
   height: 120px;
 }
-.gift{
+
+.gift {
   position: relative;
   display: flex;
   justify-content: space-evenly;
@@ -535,6 +547,7 @@ body {
   color: white;
   padding: 4px;
 }
+
 .wine {
   position: relative;
   width: 17%;
@@ -542,28 +555,33 @@ body {
   flex-direction: column;
   gap: 15px;
 }
-.wine i{
+
+.wine i {
   padding: 3px;
   font-size: 71px;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px rgb(181, 140, 103);
 }
+
 .wine h2 {
   font-size: 23px;
   font-weight: 200;
 }
-.wine p{
-font-size: 14px;
-font-weight: 300;
+
+.wine p {
+  font-size: 14px;
+  font-weight: 300;
 }
-.cool-link  {
+
+.cool-link {
   display: inline-block;
   color: #fff;
   text-decoration: none;
   list-style: none;
   font-size: 15px;
 }
-.wine li{
+
+.wine li {
   list-style: none;
 }
 
@@ -572,7 +590,7 @@ font-weight: 300;
   display: block;
   width: 0;
   height: 1px;
-  background:rgb(181, 140, 103);
+  background: rgb(181, 140, 103);
   transition: width .3s;
 }
 
@@ -580,34 +598,39 @@ font-weight: 300;
   width: 100%;
   transition: width .3s;
 }
+
 .stock {
   display: flex;
   flex-direction: column;
-  gap: 3em; 
- padding: 20px;
+  gap: 3em;
+  padding: 20px;
 }
-.wrapper{
+
+.wrapper {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1em;
 }
-.top-image{
+
+.top-image {
   position: relative;
 }
-.top-image img{
+
+.top-image img {
   width: 100%;
   display: block;
   margin: 0 auto;
 }
-.content-top{
+
+.content-top {
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   position: absolute;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -615,48 +638,56 @@ font-weight: 300;
   opacity: 0;
   transition: 0.6s;
 }
-.content-top:hover{
+
+.content-top:hover {
   opacity: 1;
 }
-.content-top h1{
+
+.content-top h1 {
   font-size: 25px;
   color: #b3b5a8;
   margin-bottom: 15px;
   font-family: "Kalam", cursive;
 
 }
-.content-top p{
+
+.content-top p {
   font-size: 19px;
   color: #b3b5a8;
-  font-family:"Kalam", cursive;
+  font-family: "Kalam", cursive;
 
 }
-.content-top > *{
-transform: translateY(25px);
-transition: transform 0.6s;
+
+.content-top>* {
+  transform: translateY(25px);
+  transition: transform 0.6s;
 }
-.wrapper-1{
+
+.wrapper-1 {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1em;
 }
-.bottom-image{
+
+.bottom-image {
   position: relative;
 }
-.bottom-image img{
+
+.bottom-image img {
   width: 100%;
   display: block;
   margin: 0 auto;
 }
-.content-bottom{
+
+.content-bottom {
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   position: absolute;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -664,31 +695,36 @@ transition: transform 0.6s;
   opacity: 0;
   transition: 0.6s;
 }
-.content-bottom:hover{
+
+.content-bottom:hover {
   opacity: 1;
 }
-.content-bottom h1{
+
+.content-bottom h1 {
   font-size: 25px;
   color: #b3b5a8;
   margin-bottom: 15px;
   font-family: "Kalam", cursive;
 }
-.content-bottom p{
+
+.content-bottom p {
   font-size: 20px;
   color: #b3b5a8;
   font-family: "Kalam", cursive;
 
 }
-.content-bottom > *{
-transform: translateY(25px);
-transition: transform 0.6s;
+
+.content-bottom>* {
+  transform: translateY(25px);
+  transition: transform 0.6s;
 }
-#loop{
+
+#loop {
   height: 600px;
 
 }
 
-.video{
+.video {
   width: 100%;
   height: 100%;
   display: flex;
@@ -696,21 +732,23 @@ transition: transform 0.6s;
   align-items: center;
   position: relative;
 }
-.table{
+
+.table {
   text-align: center;
 }
-.table h1{
+
+.table h1 {
   font-size: 80px;
   color: #fff;
   margin-bottom: 50px;
   font-family: "Italianno", cursive;
   font-weight: 400;
   font-style: normal;
-  color:gainsboro;
-  
-}  
+  color: gainsboro;
 
-.table a{
+}
+
+.table a {
   font-size: 23px;
   color: #fff;
   text-decoration: none;
@@ -719,17 +757,20 @@ transition: transform 0.6s;
   border-radius: 50px;
   transition: 0.3s;
 }
-.table a:hover{
+
+.table a:hover {
   background-color: #ED68;
   color: black;
 }
-.background-clip{
+
+.background-clip {
   position: absolute;
   bottom: 0;
   z-index: -1;
   border-radius: 25px 30px;
   border: 1px solid rgb(181, 140, 103);
 }
+
 .contacts-us {
   color: white;
   display: flex;
@@ -741,6 +782,7 @@ transition: transform 0.6s;
   position: relative;
   gap: 3em;
 }
+
 .contacts-us {
   color: #fff;
   display: flex;
@@ -749,17 +791,20 @@ transition: transform 0.6s;
   align-items: center;
   height: 450px;
 }
+
 .hour {
   display: flex;
   flex-direction: column;
   gap: 7px;
   position: relative;
-  
+
 }
-.hour h3{
+
+.hour h3 {
   font-weight: 400;
 }
-.hour h4{
+
+.hour h4 {
   font-weight: 400;
 }
 
@@ -771,7 +816,7 @@ transition: transform 0.6s;
   left: 18em;
 }
 
-.hour h1{
+.hour h1 {
   font-weight: 300;
 }
 
@@ -784,13 +829,15 @@ h6 {
   font-size: 20px;
   font-weight: 400;
 }
-h6:before, 
-h6:after { 
-  content: ""; 
-  flex: 1 1; 
-  border-bottom: 1px solid rgb(181, 140, 103); 
-  margin: auto 10px; 
-} 
+
+h6:before,
+h6:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid rgb(181, 140, 103);
+  margin: auto 10px;
+}
+
 .social {
   display: flex;
   justify-content: space-between;
@@ -799,7 +846,7 @@ h6:after {
 }
 
 .one,
-.three{
+.three {
   display: inline-block;
   display: flex;
   gap: 2em;
@@ -810,16 +857,19 @@ h6:after {
   display: inline-block;
   color: #fff;
 }
-.social h5{
+
+.social h5 {
   font-size: 12px;
   font-weight: 400;
 }
-.social i{
+
+.social i {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px rgb(181, 140, 103);
   padding: 5px;
 }
-.social h3{
+
+.social h3 {
   font-size: 15px;
   font-weight: 400;
 }
