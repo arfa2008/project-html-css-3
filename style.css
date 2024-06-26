@@ -51,7 +51,22 @@ body {
   margin: auto;
 
 }
+.hamburger {
+  display: none; /* Hide by default */
+  cursor: pointer;
+}
 
+.bars {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+.menu-toggle {
+  display: none; /* Hide checkbox */
+}
 
 .navdiv {
   display: flex;
@@ -127,7 +142,6 @@ body {
   font-size: 28px;
   font-weight: 250;
 }
-
 .main {
   position: relative;
 }
@@ -188,19 +202,26 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 85%;
+  margin: 0 auto;
 }
 
 .pralines {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
   width: 100%;
 }
-
+.price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 14px;
+}
 .choco {
   border: 0.1px solid rgb(181, 140, 103);
-  width: 335px;
-  height: 550px;
-  position: relative;
+  width: 40%;
+  height: 535px;
 }
 
 .choco h1 {
@@ -208,8 +229,8 @@ body {
   letter-spacing: 0.2em;
   font-weight: 300;
   font-style: normal;
-  border-left: 1em solid transparent;
-  padding: 4px;
+  text-align: center;
+  padding: 10px;
 
 }
 
@@ -217,9 +238,6 @@ body {
   font-size: 15px;
   font-weight: 300;
   font-style: normal;
-  border-left: 18em solid transparent;
-  position: absolute;
-  top: 3em;
 }
 
 .choco h3 {
@@ -228,17 +246,14 @@ body {
   font-style: normal;
   text-transform: uppercase;
   text-decoration: underline rgb(181, 140, 103);
-  position: absolute;
-  top: 3.2em;
-  padding-left: 15px;
 
 }
 
 .choco #hoverimg {
-  width: 85%;
-  transition: transform 0.3s ease-in;
-  position: absolute;
-  left: 1.8em;
+  width: 72%;
+  transition: transform 0.3s ease-in-out;
+  margin: 0 auto;
+  display: flex;
 }
 
 .choco #hoverimg:hover {
@@ -249,21 +264,22 @@ body {
   font-size: 16px;
   font-weight: 300;
   font-style: normal;
-  padding: 18px;
-  position: absolute;
-  bottom: 33px;
+  padding: 10px;
 
 }
-
+#screen {
+  width: 21.07%;
+  height: 524px;
+  position: absolute;
+}
 #crunch h4 {
   color: white;
   font-size: 55px;
   font-family: "Mrs Saint Delafield", cursive;
   font-weight: 500;
   font-style: normal;
-  position: absolute;
-  top: 1em;
-  right: 1.9em;
+  position: relative;
+  text-align: center;
 }
 
 #crunch h5 {
@@ -273,28 +289,20 @@ body {
   text-transform: capitalize;
   text-decoration: underline rgb(181, 140, 103);
   text-align: center;
-  position: absolute;
-  top: 9em;
-  right: 9em;
+  position: relative;
 }
-
-#screen {
-  width: 335.4px;
-  height: 548px;
-  position: absolute;
-}
-
 .discover {
   display: flex;
   flex-direction: row;
   justify-content: center;
   padding-top: 10px;
+  margin: 0 auto;
+  width: 100%;
 }
-
 .bar {
   border: 0.1px solid rgb(181, 140, 103);
-  width: 335.4px;
-  height: 550px;
+  width: 40%;
+  height: 535px;
   position: relative;
 }
 
@@ -303,18 +311,19 @@ body {
   letter-spacing: 0.2em;
   font-weight: 300;
   font-style: normal;
-  position: absolute;
-  left: 2em;
-  top: 7px;
+  text-align: center;
+  padding: 10px;
 }
-
+.price-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 14px;
+}
 .bar h2 {
   font-size: 15px;
   font-weight: 300;
   font-style: normal;
-  position: absolute;
-  top: 4em;
-  right: 2em;
 }
 
 .bar h3 {
@@ -323,17 +332,13 @@ body {
   font-style: normal;
   text-transform: uppercase;
   text-decoration: underline rgb(181, 140, 103);
-  position: absolute;
-  top: 4em;
-  left: 1em;
 
 }
-
 .bar #hoverimg {
-  width: 85%;
+  width: 72%;
   transition: transform 0.3s ease-in;
-  position: absolute;
-  left: 1.8em;
+  margin: 0 auto;
+  display: flex;
 }
 
 .bar #hoverimg:hover {
@@ -344,9 +349,7 @@ body {
   font-size: 16px;
   font-weight: 300;
   font-style: normal;
-  padding: 18px;
-  position: absolute;
-  bottom: 33px;
+  padding: 10px;
 }
 
 
@@ -357,9 +360,8 @@ body {
   font-weight: bold;
   font-style: normal;
   color: rgb(181, 140, 103);
-  position: absolute;
-  left: 1em;
-  top: 10px;
+  text-align: center;
+  position: relative;
 }
 
 #munch h3 {
@@ -367,6 +369,8 @@ body {
   font-weight: 300;
   text-align: center;
   text-decoration: none;
+  text-align: center;
+  position: relative;
 }
 
 #munch h4 {
@@ -376,33 +380,27 @@ body {
   text-transform: capitalize;
   text-decoration: underline rgb(181, 140, 103);
   text-align: center;
-  position: absolute;
-  top: 12em;
-  left: 9em;
+  position: relative;
 }
-
-#screen {
-  width: 335.4px;
-  height: 548px;
+#screen-1 {
+  width: 100%;
+  height: 533px;
   position: absolute;
 }
-
 .container6 {
   display: flex;
-  padding: 7px;
+  padding: 10px;
+  width: 86%;
+  margin: 0 auto;
 }
-
 .opening {
-  width: 60%;
+  width: 75%;
   display: flex;
-  text-align: center;
   flex-direction: column;
-  align-items: center;
-  gap: 6em;
+  gap: 5em;
   color: white;
-  text-align: center;
+  justify-content: flex-start;
 }
-
 .visit {
   display: flex;
   flex-direction: column;
@@ -410,7 +408,7 @@ body {
   font-size: larger;
   text-align: left;
   width: 60%;
-  padding-top: 38px;
+  padding-top: 20px;
 
 }
 
@@ -465,7 +463,7 @@ body {
 
 .scroll-text {
   white-space: nowrap;
-  animation: scroll-left 12s linear infinite;
+  animation: scroll-left 15s linear infinite;
   display: inline-block;
 }
 
@@ -480,31 +478,29 @@ body {
 }
 
 .container7 {
-  position: relative;
+  width: 90%;
+  margin: 0 auto;
 }
-
 .blog {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   gap: 1em;
   padding: 2em;
 }
-
 .cake {
   color: white;
-  display: flex;
-  flex-direction: column;
-  gap: 3em;
-  text-align: center;
   font-size: 15px;
-  height: 600px;
+  height: 515px;
   border: 1px solid rgb(181, 140, 103);
+  padding: 10px;
 }
-
 .cake img {
-  width: 85%;
-  transition: transform 0.3s ease-in;
-  padding: 30px;
+  width: 80%;
+  transition: transform 0.3s ease-in-out;
+  padding-top: 22px;
+  display: flex;
+  margin: 0 auto;
 }
 
 .cake #imagehover:hover {
@@ -519,7 +515,11 @@ body {
   font-weight: 300;
   font-size: 25px;
 }
-
+.cream {
+  text-align: center;
+  color: #fff;
+  padding-top: 25px;
+}
 .cake i {
   padding: 3px;
   font-size: 11px;
@@ -769,6 +769,7 @@ body {
   z-index: -1;
   border-radius: 25px 30px;
   border: 1px solid rgb(181, 140, 103);
+  width: 85%;
 }
 
 .contacts-us {
@@ -872,4 +873,312 @@ h6:after {
 .social h3 {
   font-size: 15px;
   font-weight: 400;
+}
+ /* media querey */
+@media (min-width:300px) and (max-width:575px) {
+  .container1{
+    display: none;
+  }
+  .line{
+    display: none;
+  }
+  .hamburger {
+    display: block;
+}
+
+.navdiv {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #333;
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+}
+
+.menu-toggle:checked + .navdiv {
+    display: block;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    padding: 10px;
+    border-bottom: 1px solid #666;
+}
+
+.menu li:last-child {
+    border-bottom: none;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.menu li a:hover {
+    color: #FFD43B;
+}
+
+.cart {
+    padding: 10px;
+    color: #fff;
+}
+  .brand {
+    width: 50%;
+    text-align: center;
+    padding-top: 20px;
+}
+.main-img {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  flex-direction: column;
+}
+.image_content {
+  color: white;
+  position: absolute;
+  top: 25em;
+  text-transform: capitalize;
+  text-align: center;
+}
+.image_content h2 {
+  font-size: 40px;
+  font-family: "Gilda Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.main-img img {
+  width: 355px;
+  height: 450px;
+}
+.container4 {
+  color: #fff;
+  height: 150px;
+}
+.container5 {
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+}
+.pralines {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  flex-wrap: wrap;
+}
+#screen {
+  width: 49%;
+  height: 471px;
+  position: absolute;
+}
+.choco {
+  border: 0.1px solid rgb(181, 140, 103);
+  width: 50%;
+  height: 475px;
+}
+.discover {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.bar {
+  border: 0.1px solid rgb(181, 140, 103);
+  width: 50%;
+  height: 475px;
+  position: relative;
+}
+#munch h1 {
+  color: white;
+  font-size: 26px;
+  font-family: "Mrs Saint Delafield", cursive;
+  font-weight: bold;
+  font-style: normal;
+  color: rgb(181, 140, 103);
+  text-align: center;
+  position: relative;
+}
+#screen-1 {
+  width: 100%;
+  height: 472px;
+  position: absolute;
+}
+.container4 p {
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  padding: 0px;
+}
+
+.container6 {
+    display: flex;
+    padding: 10px;
+    width: 86%;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 10px;
+}
+.opening {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+  color: white;
+  margin: auto;
+}
+.visit {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: larger;
+  text-align: left;
+  width: 106%;
+  padding-top: 0px;
+}
+.restaurant img {
+  width: 100%;
+  border: 1px solid rgb(181, 140, 103);
+}
+.blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+  padding: 2em;
+}
+.container8 center {
+  color: white;
+  font-size: 35px;
+  font-weight: 200;
+  height: 120px;
+}
+.container7 {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+  padding: 2em;
+}
+.cake {
+  color: white;
+  font-size: 15px;
+  height: 480px;
+  border: 1px solid rgb(181, 140, 103);
+  padding: 10px;
+
+}
+.container8 center {
+  color: white;
+  font-size: 34px;
+  font-weight: 200;
+  height: 120px;
+}
+.gift {
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+  color: white;
+  padding: 4px;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.wine {
+  position: relative;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0 auto;
+  justify-content: initial;
+}
+.wine p {
+  font-size: 15px;
+  font-weight: 300;
+}
+section#celeb {
+  height: 1043px;
+}
+/* .stock {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+}
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+.wrapper-1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  flex-wrap: wrap;
+} */
+.video {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.background-clip {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  border-radius: 25px 30px;
+  border: 1px solid rgb(181, 140, 103);
+  width: 85%;
+}
+.table {
+  text-align: center;
+  width: 90%;
+  height: 233px;
+}
+.table h1 {
+  font-size: 25px;
+  color: #fff;
+  margin-bottom: 50px;
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: gainsboro;
+}
+.table a {
+  font-size: 17px;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid rgb(181, 140, 103);
+  padding: 7px 25px;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+section#hero-img {
+  height: 350px;
+}
+#loop {
+  height: 0;
+}
 }

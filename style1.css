@@ -8,6 +8,13 @@ body{
     background-color: #102B2A;
     font-family: "Jost", sans-serif;
 } 
+.main a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 5px;
+}
+
 .menu-wrapper {
     display: flex;
     justify-content: center;
@@ -28,7 +35,7 @@ body{
     gap: 2em;
 }
 .image-column img {
-    width: 90%;
+    width: 80%;
     height: 475px;
     object-fit: cover;
     border-radius: 50%;

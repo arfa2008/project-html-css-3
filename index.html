@@ -27,6 +27,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>fidalgo restaurant</title>
 </head>
 
@@ -43,7 +46,12 @@
     <section class="top1">
         <header>
             <div class="container3">
-                <!-- <nav class="navbar"> -->
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="hamburger">
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                </label>
                     <div class="navdiv">
                         <ul>
                             <li class="cool-nav"><a href="#home">HOME</a></li>
@@ -59,7 +67,6 @@
                     </div>
                 </div>
             </header>
-                <!-- </nav> -->
         <div class="brand">
         <h1>F I D A L G O</h1>
     </div>
@@ -89,26 +96,32 @@
         <div class="pralines">
             <div class="choco">
                 <h1>CHOCO PRALINES</h1>
-                <h2>$15.00</h2>
+                    <div class="price">
                 <h3>Add to cart</h3>
+                <h2>$15.00</h2>
+            </div>
                 <img src="images/shop-single-img1.png" alt="" id="hoverimg">
                 <p>Morbi tempus iaculis urna id volutpat lacus
                     laoreet non curabitur. Ac turpis egestas
                     mae cenas est pharetra</p>
-            </div>
+        </div>
             <div class="choco">
                 <h1>CRUNCH PRALINES</h1>
-                <h2>$33.00</h2>
+                <div class="price">
                 <h3>Add to cart</h3>
+                <h2>$33.00</h2>
+            </div>
                 <img src="images/shop-single-img6-600x859.png" alt="" id="hoverimg">
                 <p>Morbi tempus iaculis urna id volutpat lacus
                     laoreet non curabitur. Ac turpis egestas
                     mae cenas est pharetra</p>
-            </div>
+        </div>
             <div class="choco">
                 <h1>BLUEBERRY CREAM</h1>
-                <h2>$30.00</h2>
+                <div class="price">
                 <h3>Add to cart</h3>
+                <h2>$30.00</h2>
+            </div>
                 <img src="images/shop-single-img4-600x859.png" alt="" id="hoverimg">
                 <p>Morbi tempus iaculis urna id volutpat lacus
                     laoreet non curabitur. Ac turpis egestas
@@ -123,15 +136,17 @@
         <div class="discover">
             <div class="bar">
                 <h1>ALMOND BAR</h1>
-                <h2>$29.00</h2>
+                <div class="price-bottom">
                 <h3>Add to cart</h3>
+                <h2>$29.00</h2>
+            </div>
                 <img src="images/shop-single-img3-600x859.png" alt="" id="hoverimg">
                 <p>Morbi tempus iaculis urna id volutpat lacus
                     laoreet non curabitur. Ac turpis egestas
                     mae cenas est pharetra</p>
             </div>
             <div class="bar" id="munch">
-                <img src="images/shop-list-img1-600x859.jpg" alt="" id="screen">
+                <img src="images/shop-list-img1-600x859.jpg" alt="" id="screen-1">
                 <h1>DELIGHTS</h1>
                 <h3>FIND OUT MORE
                     ABOUT SPECIAL
@@ -140,9 +155,11 @@
                 <h4>DISCOVER</h4>
             </div>
             <div class="bar">
-                <h1>CHOCO PASSION</h1>
-                <h2>$17.00</h2>
+                <h1>CHOCO PUDDING</h1>
+                <div class="price-bottom">
                 <h3>Add to cart</h3>
+                <h2>$17.00</h2>
+            </div>
                 <img src="images/shop-single-img5-600x859.png" alt="" id="hoverimg">
                 <p>Morbi tempus iaculis urna id volutpat lacus
                     laoreet non curabitur. Ac turpis egestas
@@ -150,8 +167,10 @@
             </div>
             <div class="bar">
                 <h1>CHOCO PASSION</h1>
-                <h2>$17.00</h2>
+                <div class="price-bottom">
                 <h3>Add to cart</h3>
+                <h2>$17.00</h2>
+            </div>
                 <img src="images/shop-single-img2-600x859.png" alt="" id="hoverimg">
                 <p>Morbi tempus iaculis urna id volutpat lacus
                     laoreet non curabitur. Ac turpis egestas
@@ -201,27 +220,23 @@
          <div class="container7">
              <div class="blog">
              <div class="cake">
-                <div class="viewimg">
+                <!-- <div class="viewimg"> -->
                  <img src="images/h6-blog-list-img1.jpg" alt="" id="imagehover">
-                </div>
+                <!-- </div> -->
                  <div class="cream">
                    <h3>November 2, 2023 <i class="fa-sharp fa-solid fa-diamond fa-sm" style="color: #e6a20f;"></i>cake</h3>
                    <h4>CREAME CAKES</h4>
                 </div>
             </div>
                 <div class="cake">
-                    <div class="viewimg">
                  <img src="images/h6-blog-list-img2.jpg" alt="" id="imagehover">
-                </div>
                  <div class="cream">
                  <h3>November 2, 2023 <i class="fa-sharp fa-solid fa-diamond fa-sm" style="color: #e6a20f;"></i>cake</h3>
                  <h4>OUR CHOCO STORY</h4>
                 </div>
             </div>
                 <div class="cake">
-                    <div class="viewimg">
                  <img src="images/h6-blog-list-img3.jpg" alt="" id="imagehover">
-                </div>
                  <div class="cream">
                  <h3>November 2, 2023 <i class="fa-sharp fa-solid fa-diamond fa-sm" style="color: #e6a20f;"></i>cake</h3>
                  <h4>BAKING AND CAKING</h4>
@@ -230,7 +245,7 @@
     </div>
     </div>
         </section>
-        <section>
+        <section id="celeb">
             <div class="container8" id="pages">
                 <center>WE CAN HELP YOU WITH</center>
                 <div class="gift">
@@ -261,6 +276,7 @@
                 </div>
             </div>
         </section>
+        <section id="hero-img">
         <div class="stock">
         <div class="wrapper">
             <div class="top-image">
@@ -323,8 +339,9 @@
             </div>
         </div>
     </div>
+</section>
     <section id="loop">
-        <div class="video">
+        <div class="video" id="autoplay">
             <video autoplay loop muted plays-inline class="background-clip">
                 <source src="images/media_20240618_214305_2038777364838000257.mp4" type="video/mp4">
             </video>
