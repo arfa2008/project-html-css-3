@@ -21,11 +21,11 @@ body{
 }
 .menu-container {
     display: flex;
-    width: 90%;
-    gap: 10em;
+    width: 75%;
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
+    justify-content: center;
 }
 
 .image-column {
@@ -35,7 +35,7 @@ body{
     gap: 2em;
 }
 .image-column img {
-    width: 80%;
+    width: 70%;
     height: 475px;
     object-fit: cover;
     border-radius: 50%;
@@ -212,4 +212,321 @@ h6 {
   .social h3{
     font-size: 15px;
     font-weight: 400;
+  }
+  @media (min-width: 300px) and (max-width: 576px) {
+    .menu-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto; 
+    }
+
+    .image-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .image-column img {
+        width: 200px; 
+        height: 200px; 
+        object-fit: cover;
+        border-radius: 50%; 
+        border: 2px solid rgb(181, 140, 103);
+        transition: all 0.9s;
+    }
+
+    .image-column img:hover {
+        transform: scaleX(-1);
+    }
+
+    .menu-column {
+        width: 100%; 
+        padding: 10px;
+        text-align: center;
+        color: white; 
+        font-size: 16px;
+    }
+
+    .menu-column h2 {
+        font-size: 1.2em; 
+        padding-top: 20px;
+        margin-bottom: 10px; 
+        text-decoration: underline rgb(181, 140, 103); 
+        text-decoration-thickness: 2px;
+        text-underline-offset: 8px;
+    }
+
+    .menu-column ul {
+        padding: 0;
+    }
+
+    .menu-column ul li {
+        margin-bottom: 10px;
+    }
+
+    .menu-column ul li span {
+        color: rgb(181, 140, 103);
+    }
+
+    .delivery-info {
+        margin-top: 20px;
+    }
+
+    .delivery-info p {
+        margin: 5px 0;
+        font-size: 1.1em;
+    }
+
+    .delivery-info p:first-child {
+        font-size: 1.3em;
+        font-weight: bold;
+        color: rgb(181, 140, 103);
+    }
+
+    .contacts-us {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        gap: 2em;
+        padding: 20px;
+    }
+
+    .hour {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        align-items: center;
+    }
+
+    .hour h3,
+    .hour h4 {
+        font-weight: 400;
+    }
+
+    #vertical-line {
+        display: none; 
+    }
+
+    h6 {
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+        padding: 0 2em;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    h6:before,
+    h6:after {
+        content: "";
+        flex: 1 1;
+        border-bottom: 1px solid rgb(181, 140, 103);
+        margin: auto 10px;
+    }
+
+    .social {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 0 2em;
+        height: 50px;
+        gap: 10px;
+    }
+
+    .social h5 {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .social i {
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px rgb(181, 140, 103);
+        padding: 5px;
+    }
+
+    .social h3 {
+        font-size: 11px;
+        font-weight: 400;
+    }
+    .left-wrapper, .right-wrapper {
+      display: inline-block;
+      color: #fff;
+      margin: 0 auto;
+  }
+}  
+@media (min-width:576px) and (max-width: 768px){
+  .menu-container {
+    display: flex;
+    width: 94%;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    justify-content: center;
+}
+.image-column img {
+  width: 85%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid rgb(181, 140, 103);
+  transition: all .9s;
+}
+#vertical-line {
+  width: 1px;
+  height: 135px;
+  background-color: rgb(181, 140, 103);
+  position: absolute;
+  left: 14em;
+}
+.hour h3 {
+  font-weight: 400;
+  font-size: 15px;
+}
+.social h3 {
+  font-size: 11px;
+  font-weight: 400;
+}
+.one, .three {
+  display: flex;
+  gap: 2px;
+}
+}
+@media (min-width:768px) and (max-width:852px){
+  .menu-container {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    justify-content: center;
+}
+#vertical-line {
+  width: 1px;
+  height: 135px;
+  background-color: rgb(181, 140, 103);
+  position: absolute;
+  left: 13em;
+}
+.hour h3 {
+  font-weight: 400;
+  font-size: 14px;
+}
+h6 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #fff;
+  padding: 0 4.2em;
+  font-size: 20px;
+  font-weight: 400;
+}
+.social {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 6em;
+  gap: 5em;
+  min-height: 7vh;
+}
+.one, .three {
+  display: flex;
+  gap: 0em;
+}
+.social h3 {
+  font-size: 10px;
+  font-weight: 400;
+}
+}
+  @media (min-width:853px) and (max-width:991px){
+    .menu-container {
+      display: flex;
+      width: 95%;
+      align-items: center;
+      border-radius: 10px;
+      cursor: pointer;
+      justify-content: center;
+  }
+  #vertical-line {
+    width: 1px;
+    height: 135px;
+    background-color: rgb(181, 140, 103);
+    position: absolute;
+    left: 14em;
+}
+
+.hour h3 {
+  font-weight: 400;
+  font-size: 16px;
+}
+.contacts-us {
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 300px;
+}
+.social {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 6em;
+  min-height: 18vh;
+}
+h6 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #fff;
+  padding: 0 3.8em;
+  font-size: 20px;
+  font-weight: 400;
+}
+.one, .three {
+  display: inline-block;
+  display: flex;
+  gap: 3px;
+}
+.social h3 {
+  font-size: 13px;
+  font-weight: 400;
+}
+  }
+  @media (min-width:991px) and (max-width:1200px){
+    .menu-container {
+      display: flex;
+      width: 90%;
+      align-items: center;
+      border-radius: 10px;
+      cursor: pointer;
+      justify-content: center;
+  }
+  #vertical-line {
+    width: 1px;
+    height: 135px;
+    background-color: rgb(181, 140, 103);
+    position: absolute;
+    left: 16em;
+}
+.hour h3 {
+  font-weight: 400;
+  font-size: 18px;
+}
+.contacts-us {
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 300px;
+}
+.social {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 6em;
+  min-height: 20vh;
+}
   }
