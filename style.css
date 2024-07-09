@@ -3006,3 +3006,61 @@ li a
     font-weight: 400;
   }
 }
+@media (min-width:1800px) and (max-width:2000px){
+  .choco {
+    border: 0.1px solid rgb(181, 140, 103);
+    width: 40%;
+    height: 602px;
+    display: flex;
+    flex-direction: column;
+}
+.pralines {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  height: 630px;
+}
+#screen {
+  width: 21.07%;
+  height: 595px;
+  position: absolute;
+}
+.bar {
+  border: 0.1px solid rgb(181, 140, 103);
+  width: 40%;
+  height: 602px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.discover {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 10px;
+  margin: 0 auto;
+  width: 100%;
+  height: 600px;
+}
+#screen-1 {
+  width: 100%;
+  height: 597px;
+  position: absolute;
+}
+.cake {
+  color: white;
+  font-size: 15px;
+  height: 500px;
+  border: 1px solid rgb(181, 140, 103);
+  padding: 10px;
+}
+.video {
+  width: 100%;
+  height: 680px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+}
