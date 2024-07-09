@@ -237,7 +237,7 @@ input[type="checkbox"] {
   justify-content: center;
   margin: 0 auto;
   width: 100%;
-  height: 550px;
+  height: 510px;
 }
 
 .price {
@@ -250,7 +250,7 @@ input[type="checkbox"] {
 .choco {
   border: 0.1px solid rgb(181, 140, 103);
   width: 40%;
-  height: 550px;
+  height: 500px;
   display: flex;
   flex-direction: column;
 }
@@ -295,13 +295,13 @@ input[type="checkbox"] {
   font-size: 16px;
   font-weight: 300;
   font-style: normal;
-  padding: 4px;
+  padding: 14px;
 
 }
 
 #screen {
   width: 21.07%;
-  height: 546.3px;
+  height: 497px;
   position: absolute;
 }
 
@@ -338,7 +338,7 @@ input[type="checkbox"] {
 .bar {
   border: 0.1px solid rgb(181, 140, 103);
   width: 40%;
-  height: 550px;
+  height: 500px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -390,7 +390,7 @@ input[type="checkbox"] {
   font-size: 16px;
   font-weight: 300;
   font-style: normal;
-  padding: 4px;
+  padding: 14px;
 }
 
 
@@ -426,7 +426,7 @@ input[type="checkbox"] {
 
 #screen-1 {
   width: 100%;
-  height: 546.3px;
+  height: 497px;
   position: absolute;
 }
 
@@ -1058,14 +1058,14 @@ li a
 
   #screen {
     width: 49%;
-    height: 471px;
+    height: 457px;
     position: absolute;
   }
 
   .choco {
     border: 0.1px solid rgb(181, 140, 103);
     width: 50%;
-    height: 475px;
+    height: 460px;
   }
 
   .discover {
@@ -1088,7 +1088,7 @@ li a
   .bar {
     border: 0.1px solid rgb(181, 140, 103);
     width: 50%;
-    height: 475px;
+    height: 460px;
     position: relative;
   }
 
@@ -1105,7 +1105,7 @@ li a
 
   #screen-1 {
     width: 100%;
-    height: 472px;
+    height: 457px;
     position: absolute;
   }
 
