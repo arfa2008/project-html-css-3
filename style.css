@@ -237,7 +237,7 @@ input[type="checkbox"] {
   justify-content: center;
   margin: 0 auto;
   width: 100%;
-  height: 510px;
+  height: 560px;
 }
 
 .price {
@@ -250,7 +250,7 @@ input[type="checkbox"] {
 .choco {
   border: 0.1px solid rgb(181, 140, 103);
   width: 40%;
-  height: 500px;
+  height: 545px;
   display: flex;
   flex-direction: column;
 }
@@ -301,7 +301,7 @@ input[type="checkbox"] {
 
 #screen {
   width: 21.07%;
-  height: 497px;
+  height: 543px;
   position: absolute;
 }
 
@@ -338,7 +338,7 @@ input[type="checkbox"] {
 .bar {
   border: 0.1px solid rgb(181, 140, 103);
   width: 40%;
-  height: 500px;
+  height: 545px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -426,7 +426,7 @@ input[type="checkbox"] {
 
 #screen-1 {
   width: 100%;
-  height: 497px;
+  height: 543px;
   position: absolute;
 }
 
